@@ -1,6 +1,6 @@
 # Typescript & Webpack Workflow
 
-Webpack configuration to use Typescript
+Webpack configuration to use Typescript. 'src' floder contains main .ts file that will be complied to bundle.js in the 'build' folder
 
 ## Usage
 

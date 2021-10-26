@@ -1,5 +1,4 @@
-const path = require('path');
-
+const path = require('path')
 
 module.exports = {
   devtool: 'source-map',
@@ -8,19 +7,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/, use: 'ts-loader',
-        include: [path.resolve(__dirname, 'src')]
-      }
-    ]
+        test: /\.ts$/,
+        use: 'ts-loader',
+        include: [path.resolve(__dirname, 'src')],
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.ts']
+    extensions: ['.js', '.ts'],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'build')
-  }
+    contentBase: path.join(__dirname, 'build'),
+  },
 }
